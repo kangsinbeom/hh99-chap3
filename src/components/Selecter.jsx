@@ -3,7 +3,6 @@ import { styled } from 'styled-components';
 import { blueColor, grayColor } from '../utils/GlobalSytle';
 import Button from '../components/Button';
 import Icon from '../assets/icons';
-import ReactDOM from 'react-dom';
 
 const SelectList = styled.ul`
     width: 250px;

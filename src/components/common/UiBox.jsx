@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
         text-align: center;
         margin-bottom: 15px;
         padding: 15px 0;
-        border-bottom: 1px solid ${grayColor[2]};
+        border-bottom: 1px solid #d9dce8;
         color: ${grayColor[2]};
     }
 `;

@@ -56,11 +56,11 @@ function Left() {
                     <Icon.Heart />
                 </Button.Icon>
             </UiBox>
-            <UiBox title="HiddenSelect">
+            <UiBox title="Hidden Select">
                 {/* <h2>Select</h2> */}
                 <Selecter />
             </UiBox>
-            <UiBox title="NoneHiddenSelect" translate="none">
+            <UiBox title="None Hidden Select" translate="none">
                 {/* <h2>Select</h2> */}
                 <Selecter />
             </UiBox>

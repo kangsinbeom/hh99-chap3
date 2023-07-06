@@ -14,7 +14,7 @@ function App() {
                 <Right />
             </Main>
             <Footer />
-            <div id='portal'></div>
+            <div id="portal"></div>
         </AppStyle>
     );
 }
@@ -28,7 +28,7 @@ const Main = styled.main`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     > div {
         padding: 30px 15px;
         //[ ]최종에 height 제거
