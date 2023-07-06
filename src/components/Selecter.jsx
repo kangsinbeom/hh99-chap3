@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import { blueColor, grayColor } from '../utils/GlobalSytle';
 import Button from '../components/Button';
-import reactDom from 'react-dom';
 import Icon from '../assets/icons';
 
 const SelectList = styled.ul`
@@ -60,21 +59,26 @@ export const Selecter = () => {
             </Button.Secondary>
             {selectBox && (
                 <SelectItemNonHidden>
-                    <SelectList>
-                        {selectOption.map((option) => {
-                            return (
-                                <SelectItem
-                                    value={option.value}
-                                    onClick={() => OptionClick(option.value)}
-                                >
-                                    {option.text}
-                                </SelectItem>
-                            );
-                        })}
-                    </SelectList>
+                    <SelectListmapping
+                        selectOption={selectOption}
+                        OptionClick={OptionClick}
+                    ></SelectListmapping>
                 </SelectItemNonHidden>
             )}
         </>
+    );
+};
+const SelectListmapping = ({ selectOption, OptionClick }) => {
+    return (
+        <SelectList>
+            {selectOption.map((option) => {
+                return (
+                    <SelectItem value={option.value} onClick={() => OptionClick(option.value)}>
+                        {option.text}
+                    </SelectItem>
+                );
+            })}
+        </SelectList>
     );
 };
 
