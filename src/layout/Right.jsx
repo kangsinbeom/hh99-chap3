@@ -6,7 +6,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 import Icon from "../assets/icons";
 import styled from "styled-components";
-
+import ModalTwo from "../components/ModalTwo";
 function Right(props) {
   const [input, setInput] = useState({
     title: "",
@@ -55,6 +55,9 @@ function Right(props) {
       </UiBox>
       <UiBox title="modal">
         <Modal />
+      </UiBox>
+      <UiBox title="modalTwo">
+        <ModalTwo />
       </UiBox>
     </div>
   );
