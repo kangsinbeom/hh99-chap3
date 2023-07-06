@@ -1,10 +1,13 @@
 import React from "react";
-import Button from "../components/Button";
-
+import Input from "../components/Input";
+import UiBox from "../components/common/UiBox";
 function Right(props) {
   return (
     <div>
-      <Button></Button>
+      <UiBox>
+        <Input />
+        <Input />
+      </UiBox>
     </div>
   );
 }
