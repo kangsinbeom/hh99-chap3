@@ -74,6 +74,8 @@ const IconButton = ({ children, ...restProps }) => {
             $bc={0}
             $font_color={4}
             $font_size="20px"
+            width="40px"
+            $center="center"
             $hover_font_color={blueColor[3]}
         >
             {children}

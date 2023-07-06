@@ -56,7 +56,11 @@ function Left() {
                     <Icon.Heart />
                 </Button.Icon>
             </UiBox>
-            <UiBox style={{ height: `150px` }} title="Select">
+            <UiBox title="HiddenSelect">
+                {/* <h2>Select</h2> */}
+                <Selecter />
+            </UiBox>
+            <UiBox title="NoneHiddenSelect" translate="none">
                 {/* <h2>Select</h2> */}
                 <Selecter />
             </UiBox>

@@ -16,11 +16,9 @@ function Right(props) {
     const onChnageHandler = (e) => {
         const { name, value } = e.target;
         let newValue = value;
-
         if (name === 'price') {
             newValue = value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         }
-        console.log(newValue);
         const newInput = {
             ...input,
             [name]: newValue,
@@ -32,7 +30,8 @@ function Right(props) {
         if (input.title === '' || input.price === '') {
             alert('똑바로 입력좀요');
         } else {
-            alert(input.title + ', ' + input.price);
+            const notCommaPrice = input.price.split(',').join('');
+            alert(`{name: ${input.title}, price: ${notCommaPrice}}`);
             setInput({
                 title: '',
                 price: '',
