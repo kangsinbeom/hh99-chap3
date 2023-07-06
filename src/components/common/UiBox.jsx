@@ -13,4 +13,8 @@ const StyledDiv = styled.div`
     background-color: ${grayColor[4]};
     border-radius: 10px;
     box-shadow: 0px 0px 10px #e8ebf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;

@@ -16,13 +16,18 @@ export default App;
 
 const StyledApp = styled.div`
     border: 1px solid tomato;
-    width: 60%;
-    height: 100vh;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     > div {
         padding: 30px 15px;
+        //[ ]최종에 height 제거
+        height: 100vh;
         width: 50%;
+        min-width: 250px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
