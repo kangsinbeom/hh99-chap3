@@ -1,7 +1,11 @@
 import React from "react";
 
 function Modal(props) {
-  return <div></div>;
+  return (
+    <div>
+      <form action="">asdf</form>
+    </div>
+  );
 }
 
 export default Modal;

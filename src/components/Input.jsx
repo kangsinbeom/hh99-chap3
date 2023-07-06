@@ -8,14 +8,20 @@ function Input(props) {
 export default Input;
 
 const StyledInput = styled.input`
+  padding-left: 10px;
   width: 90%;
   height: 40px;
   background-color: ${blueColor[3]};
   border-radius: 5px;
   border: 1px solid ${blueColor[2]};
   margin-bottom: 10%;
+  outline-color: ${blueColor[2]};
+  color: ${grayColor[1]};
   &::placeholder {
     color: ${grayColor[2]};
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;
 
