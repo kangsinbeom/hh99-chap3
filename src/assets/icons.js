@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faCaretRight, faCaretDown, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as Github } from './github.svg';
 const Heart = () => {
     return <FontAwesomeIcon icon={faHeart} />;
@@ -14,6 +14,12 @@ const Git = ({ color }) => {
     return <Github style={{ height: `20px`, fill: color }} />;
 };
 
-const Icon = { Heart, CaretRight, CaretDown, Git };
+const Xmark = () => {
+    return <FontAwesomeIcon icon={faXmark} />
+}
+
+
+
+const Icon = { Heart, CaretRight, CaretDown, Git, Xmark };
 
 export default Icon;
