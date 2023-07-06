@@ -5,15 +5,13 @@ function Left(props) {
     return (
         <div>
             <UiBox>
-                <Button></Button>
-                <Button></Button>
-                <Button></Button>
+                <Button>ui components</Button>
+                <Button>ui components</Button>
+                <Button>ui components</Button>
             </UiBox>
-            <UiBox>
-                <Button></Button>
-                <Button></Button>
-                <Button></Button>
-            </UiBox>
+            <UiBox></UiBox>
+            <UiBox></UiBox>
+            <UiBox></UiBox>
         </div>
     );
 }
