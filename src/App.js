@@ -16,7 +16,7 @@ export default App;
 
 const StyledApp = styled.div`
   background-color: ${grayColor[2]};
-  width: 50%;
+  width: 60%;
   height: 100vh;
   margin: 0 auto;
 `;
