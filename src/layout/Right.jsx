@@ -3,6 +3,9 @@ import Input from '../components/Input';
 import UiBox from '../components/common/UiBox';
 import Modal from '../components/Modal';
 import { useState } from 'react';
+import Button from '../components/Button';
+import Icon from '../assets/icons';
+import styled from 'styled-components';
 
 function Right(props) {
     const [input, setInput] = useState({
@@ -13,15 +16,16 @@ function Right(props) {
     const onChnageHandler = (e) => {
         const { name, value } = e.target;
         let newValue = value;
+
         if (name === 'price') {
             newValue = value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         }
+        console.log(newValue);
         const newInput = {
             ...input,
             [name]: newValue,
         };
         setInput(newInput);
-        console.log(newInput);
     };
 
     const onSubmitHandler = (e) => {
@@ -39,19 +43,32 @@ function Right(props) {
 
     return (
         <div>
-            <UiBox>
-                <form onSubmit={onSubmitHandler}>
+            <UiBox title="input">
+                <StyledForm onSubmit={onSubmitHandler}>
                     <Input value={input.title} name="title" onChange={onChnageHandler} />
                     <Input value={input.price} name="price" onChange={onChnageHandler} />
-                    <button>submit</button>
-                </form>
+                    <Button.Primary>
+                        send
+                        <Icon.Heart />
+                    </Button.Primary>
+                </StyledForm>
             </UiBox>
-            <UiBox></UiBox>
+            <UiBox title="modal">
+                <Modal />
+            </UiBox>
         </div>
     );
 }
 
 export default Right;
+
+const StyledForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`;
 
 // 폰트 적용하는 거 앞에서부터 찾는데 먼저 영문쓰고 한글 쓰면 된다
 
