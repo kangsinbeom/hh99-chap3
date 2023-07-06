@@ -25,7 +25,7 @@ const StyledApp = styled.div`
     > div {
         padding: 30px 15px;
         //[ ]최종에 height 제거
-        height: 100vh;
+        height: 600vh;
         width: 50%;
         min-width: 250px;
         display: flex;

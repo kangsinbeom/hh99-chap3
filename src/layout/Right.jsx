@@ -13,15 +13,16 @@ function Right(props) {
   const onChnageHandler = (e) => {
     const { name, value } = e.target;
     let newValue = value;
+
     if (name === "price") {
       newValue = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+    console.log(newValue);
     const newInput = {
       ...input,
       [name]: newValue,
     };
     setInput(newInput);
-    console.log(newInput);
   };
 
   const onSubmitHandler = (e) => {
