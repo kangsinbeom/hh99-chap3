@@ -7,20 +7,22 @@ import Button from "../components/Button";
 import Icon from "../assets/icons";
 import styled from "styled-components";
 import ModalTwo from "../components/ModalTwo";
-function Right(props) {
+function Right() {
   const [input, setInput] = useState({
     title: "",
     price: "",
   });
+  const [alertPrice, setAlertPrice] = useState(false);
 
-  const onChnageHandler = (e) => {
+  const onChangeHandler = (e) => {
     const { name, value } = e.target;
     let newValue = value;
-
     if (name === "price") {
+      let isNanPrice = isNaN(newValue.replace(/,/g, ""));
+      isNanPrice === true && alert("숫자만 입력해주세요");
       newValue = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    console.log(newValue);
+
     const newInput = {
       ...input,
       [name]: newValue,
@@ -45,8 +47,8 @@ function Right(props) {
     <div>
       <UiBox title="input">
         <StyledForm onSubmit={onSubmitHandler}>
-          <Input value={input.title} name="title" onChange={onChnageHandler} />
-          <Input value={input.price} name="price" onChange={onChnageHandler} />
+          <Input value={input.title} name="title" onChange={onChangeHandler} />
+          <Input value={input.price} name="price" onChange={onChangeHandler} />
           <Button.Primary>
             send
             <Icon.Heart />
