@@ -12,6 +12,8 @@ const SelectList = styled.ul`
     padding: 10px;
     background-color: ${blueColor[3]};
     border: 1px solid ${blueColor[2]};
+    box-shadow: 0px 15px 30px #e8ebf5;
+
     /* position: absolute;
     transform: translate(0, 78%); */
 `;
