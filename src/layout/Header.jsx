@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../assets/styles/Color';
+import { blueColor, grayColor } from '../assets/styles/colors';
 import Icon from '../assets/icons/icons';
 
 const HeaderStyle = styled.header`

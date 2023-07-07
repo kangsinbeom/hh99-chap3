@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../assets/styles/Color';
+import { blueColor, grayColor } from '../assets/styles/colors';
 import Button from '../components/Button';
 import Icon from '../assets/icons/icons';
 

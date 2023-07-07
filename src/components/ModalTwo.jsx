@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import { grayColor, blueColor } from '../assets/styles/Color';
+import { grayColor, blueColor } from '../assets/styles/colors';
 import '../assets/styles/modal.css';
 import Icon from '../assets/icons/icons';
 import Button from './Button';

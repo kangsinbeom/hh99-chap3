@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { blueColor, grayColor } from '../../assets/styles/Color';
+import { blueColor, grayColor } from '../../assets/styles/colors';
 function UiBox({ children, title, translate }) {
     return (
         <StyledDiv translate={translate}>
