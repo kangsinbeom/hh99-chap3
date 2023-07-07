@@ -2,7 +2,6 @@ import './App.css';
 import Left from './layout/Left';
 import Right from './layout/Right';
 import styled from 'styled-components';
-import { grayColor } from './utils/GlobalSytle';
 import { Header } from './layout/Header';
 import { Footer } from './layout/Footer';
 function App() {

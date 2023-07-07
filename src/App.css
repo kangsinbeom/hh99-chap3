@@ -41,7 +41,8 @@ ul {
   flex-direction: column;
 }
 .modal > p {
-  margin-top: 30px;
+  margin: auto;
+  padding-bottom: 30px;
   font-weight: 700;
   font-size: 40px;
 }

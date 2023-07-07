@@ -24,6 +24,10 @@ function Modal(props) {
                           <div className="modal-background"></div>
                           <div className="modal">
                               <p>혜경님이 너 진짜 싫어함</p>
+                              <Button.Primary width="100px" $center="center">
+                                  {' '}
+                                  check
+                              </Button.Primary>
                               <Button.Secondary
                                   width="100px"
                                   $center="center"

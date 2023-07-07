@@ -28,7 +28,7 @@ function Left() {
             </UiBox>
             <UiBox title="Secondary button style">
                 {/* <h2>button style</h2> */}
-                <Button.Secondary width="250px" onClick={() => prompt('입력받기', '')}>
+                <Button.Secondary width="250px" onClick={() => alert('안녕하세요')}>
                     <Icon.Heart />
                     ui components
                     <Icon.Heart />
@@ -46,13 +46,13 @@ function Left() {
                 </Button.Secondary>
             </UiBox>
             <UiBox title="Icon button">
-                <Button.Icon onClick={() => alert('안녕하세요')}>
+                <Button.Icon onClick={() => alert('💖')}>
                     <Icon.Heart />
                 </Button.Icon>
-                <Button.Icon onClick={() => alert('안녕하세요')}>
+                <Button.Icon onClick={() => alert('⭐️')}>
                     <Icon.Star />
                 </Button.Icon>
-                <Button.Icon onClick={() => alert('안녕하세요')}>
+                <Button.Icon onClick={() => alert('💀')}>
                     <Icon.Heart />
                 </Button.Icon>
             </UiBox>
