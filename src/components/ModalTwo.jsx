@@ -1,50 +1,55 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { grayColor } from "../utils/GlobalSytle";
-import ReactDOM from "react-dom";
-import Icon from "../assets/icons";
-import Button from "./Button";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import styled from 'styled-components';
+import { grayColor, blueColor } from '../assets/styles/colors';
+import '../assets/styles/modal.css';
+import Icon from '../assets/icons/icons';
+import Button from './Button';
 function Modal(props) {
-  const [modalChecked, setModalChecked] = useState(false);
+    const [modalChecked, setModalChecked] = useState(false);
 
-  const onClickModalHandler = () => {
-    let checked = !modalChecked;
-    setModalChecked(checked);
-  };
+    const onClickModalHandler = () => {
+        let checked = !modalChecked;
+        setModalChecked(checked);
+    };
 
-  return (
-    <StyledModal>
-      <Button.Secondary onClick={onClickModalHandler}>
-        <Icon.Heart />
-        open modalTwo
-      </Button.Secondary>
-      {modalChecked
-        ? ReactDOM.createPortal(
-            <>
-              <div className="modal-background"></div>
-              <div className="modal">
-                <p>혜경님이 너 진짜 싫어함</p>
-                <Button.Secondary
-                  width="100px"
-                  center="center"
-                  onClick={onClickModalHandler}
-                >
-                  {" "}
-                  close
-                </Button.Secondary>
-              </div>
-            </>,
-            document.getElementById("portal")
-          )
-        : null}
-    </StyledModal>
-  );
+    return (
+        <StyledModal>
+            <Button.Secondary onClick={onClickModalHandler}>
+                <Icon.Heart />
+                open modalTwo
+            </Button.Secondary>
+            {modalChecked
+                ? ReactDOM.createPortal(
+                      <>
+                          <div className="modal-background"></div>
+                          <div className="modal">
+                              <p>Modal version2</p>
+                              <Button.Primary width="100px" $center="center">
+                                  {' '}
+                                  check
+                              </Button.Primary>
+                              <Button.Secondary
+                                  width="100px"
+                                  $center="center"
+                                  onClick={onClickModalHandler}
+                              >
+                                  {' '}
+                                  close
+                              </Button.Secondary>
+                          </div>
+                      </>,
+                      document.getElementById('portal')
+                  )
+                : null}
+        </StyledModal>
+    );
 }
 
 export default Modal;
 
 const StyledModal = styled.div`
-  /* display: flex;
+    /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

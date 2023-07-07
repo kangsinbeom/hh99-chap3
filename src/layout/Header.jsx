@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
-import Icon from '../assets/icons';
+import { blueColor, grayColor } from '../assets/styles/colors';
+import Icon from '../assets/icons/icons';
 
 const HeaderStyle = styled.header`
     max-width: 800px;

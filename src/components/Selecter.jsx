@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/colors';
 import Button from '../components/Button';
-import reactDom from 'react-dom';
-import Icon from '../assets/icons';
+import Icon from '../assets/icons/icons';
 
 const SelectList = styled.ul`
     width: 250px;
@@ -13,6 +12,8 @@ const SelectList = styled.ul`
     padding: 10px;
     background-color: ${blueColor[3]};
     border: 1px solid ${blueColor[2]};
+    box-shadow: 0px 15px 30px #e8ebf5;
+
     /* position: absolute;
     transform: translate(0, 78%); */
 `;
@@ -61,9 +62,10 @@ export const Selecter = () => {
             {selectBox && (
                 <SelectItemNonHidden>
                     <SelectList>
-                        {selectOption.map((option) => {
+                        {selectOption.map((option, idx) => {
                             return (
                                 <SelectItem
+                                    key={idx}
                                     value={option.value}
                                     onClick={() => OptionClick(option.value)}
                                 >

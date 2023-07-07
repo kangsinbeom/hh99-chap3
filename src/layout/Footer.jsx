@@ -1,13 +1,12 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/colors';
 
 export const Footer = () => {
     return (
         <FooterStyle>
             <FooterContent>
-                This page has been created for the project assignments of HANGAE 99's specialized
-                skills.
+                This page has been created for the React project assignments of HANGHAE 99
             </FooterContent>
         </FooterStyle>
     );
@@ -15,7 +14,7 @@ export const Footer = () => {
 
 const FooterStyle = styled.footer`
     width: 100%;
-    background-color: ${blueColor[1]};
+    background-color: ${blueColor[2]};
     padding: 20px;
 `;
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { blueColor, grayColor } from '../../utils/GlobalSytle';
-function UiBox({ children, title }) {
+import { blueColor, grayColor } from '../../assets/styles/colors';
+function UiBox({ children, title, translate }) {
     return (
-        <StyledDiv>
+        <StyledDiv translate={translate}>
             <h2>{title}</h2>
             {children}
         </StyledDiv>
@@ -13,32 +13,29 @@ function UiBox({ children, title }) {
 export default UiBox;
 
 const StyledDiv = styled.div`
-    padding: 20px 30px 30px;
     width: 100%;
+    padding: 20px 30px 30px;
     background-color: ${grayColor[4]};
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(10px);
-
+    transform: ${(props) => props.translate || `translateY(10px)`};
     box-shadow: 0px 0px 10px #dde0ed;
-
     transition: all 0.2s ease-in-out;
-
+    overflow: hidden;
+    /* position: relative; */
     &:hover {
         box-shadow: 0px 15px 30px #e8ebf5;
-
-        transform: translateY(0);
+        transform: ${(props) => props.translate || `translateY(0)`};
     }
     h2 {
         width: 100%;
         text-align: center;
         margin-bottom: 15px;
         padding: 15px 0;
-        /* box-shadow: 0px 4px 0px ${grayColor[2]}; */
-        border-bottom: 1px solid ${grayColor[2]};
+        border-bottom: 1px solid #d9dce8;
         color: ${grayColor[2]};
     }
 `;

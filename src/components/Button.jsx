@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled, css } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/colors';
 const ButtonStyle = styled.button`
     /* width: 130px; */
     width: ${(props) => props.width || ``};
@@ -9,32 +9,32 @@ const ButtonStyle = styled.button`
     margin: 8px;
     background-color: ${(props) => blueColor[props.$bc] || blueColor[1]};
     border-radius: 25px;
-    color: ${(props) => blueColor[props.fontColor] || `#fff`};
-    border: ${(props) => props.border || `none`};
+    color: ${(props) => blueColor[props.$font_color] || `#fff`};
+    border: ${(props) => props.$border || `none`};
     display: flex;
-    justify-content: ${(props) => props.center || `space-between`};
+    justify-content: ${(props) => props.$center || `space-between`};
     align-items: center;
     white-space: nowrap;
     font-weight: 700;
     gap: 20px;
     transition: all 0.3s ease-in-out;
-    ${({ fontSize }) => {
-        if (fontSize) {
+    ${({ font_size }) => {
+        if (font_size) {
             return css`
-                font-size: ${fontSize};
+                font-size: ${font_size};
                 justify-content: center;
                 width: 40px;
             `;
         }
     }}
-    font-size: ${(props) => props.fontSize || `14px`};
+    font-size: ${(props) => props.$font_size || `14px`};
     &:hover {
-        background-color: ${(props) => props.hoverColor || blueColor[1]};
-        color: ${(props) => props.hoverFontColor || blueColor[1]};
+        background-color: ${(props) => props.$hover_color || blueColor[1]};
+        color: ${(props) => props.$hover_font_color || blueColor[1]};
     }
     &:active {
         background-color: ${(props) => blueColor[props.$bc] || blueColor[1]};
-        color: ${(props) => blueColor[props.fontColor] || `#fff`};
+        color: ${(props) => blueColor[props.$font_color] || `#fff`};
     }
 `;
 
@@ -43,9 +43,9 @@ const PrimaryButton = ({ children, ...restProps }) => {
         <ButtonStyle
             {...restProps}
             $bc={1}
-            hoverColor={blueColor[2]}
-            fontColor={4}
-            hoverFontColor={blueColor[0]}
+            $hover_color={blueColor[2]}
+            $font_color={4}
+            $hover_font_color={blueColor[0]}
         >
             {children}
         </ButtonStyle>
@@ -57,9 +57,9 @@ const SecondaryButton = ({ children, ...restProps }) => {
         <ButtonStyle
             {...restProps}
             $bc={3}
-            hoverColor={blueColor[2]}
-            fontColor={1}
-            border={`1px solid ${blueColor[2]}`}
+            $hover_color={blueColor[2]}
+            $font_color={1}
+            $border={`1px solid ${blueColor[2]}`}
         >
             {children}
         </ButtonStyle>
@@ -72,9 +72,11 @@ const IconButton = ({ children, ...restProps }) => {
         <ButtonStyle
             {...restProps}
             $bc={0}
-            fontColor={4}
-            fontSize="20px"
-            hoverFontColor={blueColor[3]}
+            $font_color={4}
+            $font_size="20px"
+            width="40px"
+            $center="center"
+            $hover_font_color={blueColor[3]}
         >
             {children}
         </ButtonStyle>

@@ -12,7 +12,6 @@ function Right() {
     title: "",
     price: "",
   });
-  const [alertPrice, setAlertPrice] = useState(false);
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
@@ -21,20 +20,20 @@ function Right() {
       let isNanPrice = isNaN(newValue.replace(/,/g, ""));
       isNanPrice === true && alert("숫자만 입력해주세요");
       newValue = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      const newInput = {
+        ...input,
+        [name]: newValue,
+      };
+      setInput(newInput);
     }
-
-    const newInput = {
-      ...input,
-      [name]: newValue,
-    };
-    setInput(newInput);
   };
 
   const onSubmitHandler = (e) => {
     if (input.title === "" || input.price === "") {
       alert("똑바로 입력좀요");
     } else {
-      alert(input.title + ", " + input.price);
+      const notCommaPrice = input.price.split(",").join("");
+      alert(`{name: ${input.title}, price: ${notCommaPrice}}`);
       setInput({
         title: "",
         price: "",
