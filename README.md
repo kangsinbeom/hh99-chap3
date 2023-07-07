@@ -7,8 +7,9 @@
 <br />
 
 ### 실행화면
-
-![GIFMaker_me (1)](https://github.com/kangsinbeom/hh99-chap3/assets/84562770/9f193749-cc81-4ed2-ace5-6700ae1e46a0)
+<p align="center">
+<img src="https://github.com/Haegnim/hh99-test2/assets/84562770/5590aaf2-67df-47a6-b324-3b977e837351">
+</p>
 
 ## 배포
 
@@ -88,6 +89,7 @@ src/
 <br />
 
 ## 프로젝트 라이센스 정보 명시
-
+[font - poppins](https://fonts.google.com/specimen/Poppins) <br />
+[font - 프리텐다드](https://noonnu.cc/font_page/694) <br />
 [fontawesome](https://fontawesome.com/) <br />
 [Design Reference](https://www.behance.net/gallery/136821989/MEDICO-Doctor-Patient-Management-System-UIUX-Design)
