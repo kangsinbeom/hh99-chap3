@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Left from './layout/Left';
 import Right from './layout/Right';
 import styled from 'styled-components';

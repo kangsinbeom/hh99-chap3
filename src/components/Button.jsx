@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled, css } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/Color';
 const ButtonStyle = styled.button`
     /* width: 130px; */
     width: ${(props) => props.width || ``};

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import UiBox from '../components/common/UiBox';
-import Icon from '../assets/icons';
+import Icon from '../assets/icons/icons';
 import { Selecter } from '../components/Selecter';
 
 function Left() {

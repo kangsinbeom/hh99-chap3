@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/Color';
 import Button from '../components/Button';
-import Icon from '../assets/icons';
+import Icon from '../assets/icons/icons';
 
 const SelectList = styled.ul`
     width: 250px;

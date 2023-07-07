@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { grayColor } from '../utils/GlobalSytle';
 import ReactDOM from 'react-dom';
-import Icon from '../assets/icons';
+import styled from 'styled-components';
+import { grayColor, blueColor } from '../assets/styles/Color';
+import '../assets/styles/modal.css';
+import Icon from '../assets/icons/icons';
 import Button from './Button';
 function Modal(props) {
     const [modalChecked, setModalChecked] = useState(false);
@@ -23,7 +24,7 @@ function Modal(props) {
                       <>
                           <div className="modal-background"></div>
                           <div className="modal">
-                              <p>혜경님이 너 진짜 싫어함</p>
+                              <p>Modal version2</p>
                               <Button.Primary width="100px" $center="center">
                                   {' '}
                                   check

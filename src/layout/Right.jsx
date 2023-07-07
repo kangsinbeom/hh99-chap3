@@ -4,7 +4,7 @@ import UiBox from '../components/common/UiBox';
 import Modal from '../components/Modal';
 import { useState } from 'react';
 import Button from '../components/Button';
-import Icon from '../assets/icons';
+import Icon from '../assets/icons/icons';
 import styled from 'styled-components';
 import ModalTwo from '../components/ModalTwo';
 function Right(props) {
@@ -52,10 +52,10 @@ function Right(props) {
                     </Button.Primary>
                 </StyledForm>
             </UiBox>
-            <UiBox title="modal">
+            <UiBox title="modal version 1">
                 <Modal />
             </UiBox>
-            <UiBox title="modalTwo">
+            <UiBox title="modal version 2">
                 <ModalTwo />
             </UiBox>
         </div>

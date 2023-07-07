@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { blueColor, grayColor } from '../utils/GlobalSytle';
+import { blueColor, grayColor } from '../assets/styles/Color';
 
 function Input({ value, onChange, name }) {
     return <StyledInput value={value} onChange={onChange} name={name} placeholder={name} />;

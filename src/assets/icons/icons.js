@@ -8,6 +8,7 @@ import {
     faBomb,
 } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as Github } from './github.svg';
+
 const Heart = () => {
     return <FontAwesomeIcon icon={faHeart} />;
 };
