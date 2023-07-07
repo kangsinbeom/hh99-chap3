@@ -27,7 +27,7 @@ const Main = styled.main`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     > div {
         padding: 30px 15px;
         //[ ]최종에 height 제거

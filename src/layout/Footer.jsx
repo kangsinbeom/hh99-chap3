@@ -16,8 +16,6 @@ const FooterStyle = styled.footer`
     width: 100%;
     background-color: ${blueColor[2]};
     padding: 20px;
-    position: fixed;
-    bottom: 0;
 `;
 
 const FooterContent = styled.p`
