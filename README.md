@@ -7,8 +7,9 @@
 <br />
 
 ### 실행화면
-
-![GIFMaker_me (1)](https://github.com/kangsinbeom/hh99-chap3/assets/84562770/9f193749-cc81-4ed2-ace5-6700ae1e46a0)
+<p align="center">
+<img src="https://github.com/Haegnim/hh99-test2/assets/84562770/5590aaf2-67df-47a6-b324-3b977e837351">
+</p>
 
 ## 배포
 
