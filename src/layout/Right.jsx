@@ -4,7 +4,7 @@ import UiBox from "../components/common/UiBox";
 import Modal from "../components/Modal";
 import { useState } from "react";
 import Button from "../components/Button";
-import Icon from "../assets/icons";
+import Icon from "../assets/icons/icons";
 import styled from "styled-components";
 import ModalTwo from "../components/ModalTwo";
 function Right() {
@@ -20,12 +20,12 @@ function Right() {
       let isNanPrice = isNaN(newValue.replace(/,/g, ""));
       isNanPrice === true && alert("숫자만 입력해주세요");
       newValue = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      const newInput = {
-        ...input,
-        [name]: newValue,
-      };
-      setInput(newInput);
     }
+    const newInput = {
+      ...input,
+      [name]: newValue,
+    };
+    setInput(newInput);
   };
 
   const onSubmitHandler = (e) => {
