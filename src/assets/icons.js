@@ -5,6 +5,7 @@ import {
     faCaretDown,
     faXmark,
     faStar,
+    faBomb,
 } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as Github } from './github.svg';
 const Heart = () => {
@@ -28,6 +29,10 @@ const Star = () => {
     return <FontAwesomeIcon icon={faStar} />;
 };
 
-const Icon = { Heart, CaretRight, CaretDown, Git, Xmark, Star };
+const Bomb = () => {
+    return <FontAwesomeIcon icon={faBomb} />;
+};
+
+const Icon = { Heart, CaretRight, CaretDown, Git, Xmark, Star, Bomb };
 
 export default Icon;

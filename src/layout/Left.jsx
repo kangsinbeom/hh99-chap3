@@ -46,14 +46,14 @@ function Left() {
                 </Button.Secondary>
             </UiBox>
             <UiBox title="Icon button">
-                <Button.Icon onClick={() => alert('💖')}>
+                <Button.Icon onClick={() => alert('💖'.repeat(20))}>
                     <Icon.Heart />
                 </Button.Icon>
-                <Button.Icon onClick={() => alert('⭐️')}>
+                <Button.Icon onClick={() => alert('⭐️'.repeat(20))}>
                     <Icon.Star />
                 </Button.Icon>
-                <Button.Icon onClick={() => alert('💀')}>
-                    <Icon.Heart />
+                <Button.Icon onClick={() => alert('💀'.repeat(20))}>
+                    <Icon.Bomb />
                 </Button.Icon>
             </UiBox>
             <UiBox title="Hidden Select">
