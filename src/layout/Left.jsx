@@ -61,7 +61,6 @@ function Left() {
                 <Selecter />
             </UiBox>
             <UiBox title="None Hidden Select" translate="none">
-                {/* <h2>Select</h2> */}
                 <Selecter />
             </UiBox>
         </div>

@@ -25,7 +25,6 @@ const StyledDiv = styled.div`
     box-shadow: 0px 0px 10px #dde0ed;
     transition: all 0.2s ease-in-out;
     overflow: hidden;
-    /* position: relative; */
     &:hover {
         box-shadow: 0px 15px 30px #e8ebf5;
         transform: ${(props) => props.translate || `translateY(0)`};
