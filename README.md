@@ -90,6 +90,7 @@ src/
 <br />
 
 ## 프로젝트 라이센스 정보 명시
-
+[font - poppins](https://fonts.google.com/specimen/Poppins) <br />
+[font - 프리텐다드](https://noonnu.cc/font_page/694) <br />
 [fontawesome](https://fontawesome.com/) <br />
 [Design Reference](https://www.behance.net/gallery/136821989/MEDICO-Doctor-Patient-Management-System-UIUX-Design)
