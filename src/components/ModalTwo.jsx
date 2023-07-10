@@ -15,28 +15,25 @@ function Modal(props) {
 
     return (
         <StyledModal>
-            <Button.Secondary onClick={onClickModalHandler}>
+            <Button $btn_style={'secondary'} onClick={onClickModalHandler}>
                 <Icon.Heart />
                 open modalTwo
-            </Button.Secondary>
+            </Button>
             {modalChecked
                 ? ReactDOM.createPortal(
                       <>
                           <div className="modal-background"></div>
                           <div className="modal">
                               <p>Modal version2</p>
-                              <Button.Primary width="100px" $center="center">
-                                  {' '}
-                                  check out
-                              </Button.Primary>
-                              <Button.Secondary
-                                  width="100px"
+                              <Button $center="center"> check out</Button>
+                              <Button
+                                  $btn_style={'secondary'}
                                   $center="center"
                                   onClick={onClickModalHandler}
                               >
                                   {' '}
                                   close
-                              </Button.Secondary>
+                              </Button>
                           </div>
                       </>,
                       document.getElementById('portal')

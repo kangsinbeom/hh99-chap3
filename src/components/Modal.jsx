@@ -14,11 +14,11 @@ function Modal(props) {
 
     return (
         <StyledModal>
-            <Button.Primary width="250px" onClick={onClickModalHandler}>
+            <Button $size={'large'} onClick={onClickModalHandler}>
                 <Icon.Heart />
                 open modal
                 <Icon.Heart />
-            </Button.Primary>
+            </Button>
             {modalChecked
                 ? ReactDOM.createPortal(
                       <>

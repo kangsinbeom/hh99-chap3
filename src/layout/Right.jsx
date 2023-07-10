@@ -45,20 +45,20 @@ function Right() {
 
     return (
         <div>
-            <UiBox title="input">
+            <UiBox title={'input'}>
                 <StyledForm onSubmit={onSubmitHandler}>
                     <Input value={input.title} name="title" onChange={onChangeHandler} />
                     <Input value={input.price} name="price" onChange={onChangeHandler} />
-                    <Button.Primary>
+                    <Button>
                         send
                         <Icon.Heart />
-                    </Button.Primary>
+                    </Button>
                 </StyledForm>
             </UiBox>
-            <UiBox title="modal">
+            <UiBox title={'modal'}>
                 <Modal />
             </UiBox>
-            <UiBox title="modalTwo">
+            <UiBox title={'modalTwo'}>
                 <ModalTwo />
             </UiBox>
         </div>

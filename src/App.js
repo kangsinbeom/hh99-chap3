@@ -10,7 +10,7 @@ function App() {
             <Header />
             <Main>
                 <Left />
-                {/* <Right /> */}
+                <Right />
             </Main>
             <Footer />
             <div id="portal"></div>

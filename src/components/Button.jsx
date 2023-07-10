@@ -91,11 +91,11 @@ const IconButton = ({ children, ...restProps }) => {
             {...restProps}
             $bc={blueColor[0]}
             $font_color={blueColor[4]}
-            $font_size="20px"
-            $center="center"
+            $font_size={'20px'}
+            $center={'center'}
             $hover_color={blueColor[1]}
             $hover_font_color={blueColor[3]}
-            $width="40px"
+            $width={'40px'}
         >
             {children}
         </ButtonStyle>
