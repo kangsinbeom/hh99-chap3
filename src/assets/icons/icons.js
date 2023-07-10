@@ -35,5 +35,5 @@ const Bomb = () => {
 };
 
 const Icon = { Heart, CaretRight, CaretDown, Git, Xmark, Star, Bomb };
-
+// 담아서 내보내는 방식이 이렇게 내보내는구나
 export default Icon;
