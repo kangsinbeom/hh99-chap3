@@ -6,7 +6,7 @@ import { Header } from './layout/Header';
 import { Footer } from './layout/Footer';
 function App() {
     return (
-        <AppStyle>
+        <>
             <Header />
             <Main>
                 <Left />
@@ -14,12 +14,12 @@ function App() {
             </Main>
             <Footer />
             <div id="portal"></div>
-        </AppStyle>
+        </>
     );
 }
 
 export default App;
-const AppStyle = styled.div``;
+
 const Main = styled.main`
     max-width: 800px;
     margin: 0 auto;
