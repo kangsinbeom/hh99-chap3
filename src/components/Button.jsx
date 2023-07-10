@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { blueColor, grayColor } from "../assets/styles/colors";
+import { blueColor } from "../assets/styles/colors";
 
 // Button 컴포넌트는 스타일에 대한 $size와 $btn_style 2개의 인자를 받습니다.
 // $size를 받지 않은 경우 button 안에 있는 컨텐츠 만큼의 길이를 갖습니다.

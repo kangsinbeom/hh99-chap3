@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { styled, css } from "styled-components";
+import { styled } from "styled-components";
 import "../assets/styles/modal.css";
 import Icon from "../assets/icons/icons";
 import Button from "./Button";

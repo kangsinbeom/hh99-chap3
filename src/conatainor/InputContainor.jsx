@@ -46,10 +46,10 @@ const InputContainor = () => {
       <StyledForm onSubmit={onSubmitHandler}>
         <Input value={input.title} name="title" onChange={onChangeHandler} />
         <Input value={input.price} name="price" onChange={onChangeHandler} />
-        <Button.Primary>
+        <Button $btn_style={"primary"}>
           send
           <Icon.Heart />
-        </Button.Primary>
+        </Button>
       </StyledForm>
     </UiBox>
   );
