@@ -7,62 +7,69 @@ import { Selecter } from '../components/Selecter';
 function Left() {
     return (
         <div>
+            {/* Primary button style UI box start */}
             <UiBox title="Primary button style">
-                {/* <h2>button style</h2> */}
-                <Button.Primary width="250px" onClick={() => prompt('입력받기', '')}>
+                <Button $size="large" $hover_color="pink" onClick={() => prompt('입력받기', '')}>
                     <Icon.Heart />
                     ui components
                     <Icon.Heart />
-                </Button.Primary>
-                <Button.Primary>
+                </Button>
+                <Button $size="medium" $btn_style="primary">
                     ui components
                     <Icon.Heart />
-                </Button.Primary>
-                <Button.Primary>
+                </Button>
+                <Button $size="medium" $btn_style="primary">
                     <Icon.Heart />
                     ui components
-                </Button.Primary>
-                <Button.Primary width="100px" $center="center">
+                </Button>
+                <Button $size="small" $center="center" $btn_style="primary">
                     ui
-                </Button.Primary>
+                </Button>
             </UiBox>
+            {/* Primary button style UI box end */}
+            {/* Secondary button style box start*/}
             <UiBox title="Secondary button style">
-                {/* <h2>button style</h2> */}
-                <Button.Secondary width="250px" onClick={() => alert('안녕하세요')}>
+                <Button $size="large" $btn_style="secondary" onClick={() => alert('안녕하세요')}>
                     <Icon.Heart />
                     ui components
                     <Icon.Heart />
-                </Button.Secondary>
-                <Button.Secondary>
+                </Button>
+                <Button $size="medium" $btn_style="secondary">
                     ui components
                     <Icon.Heart />
-                </Button.Secondary>
-                <Button.Secondary>
+                </Button>
+                <Button $size="medium" $btn_style="secondary">
                     <Icon.Heart />
                     ui components
-                </Button.Secondary>
-                <Button.Secondary width="100px" $center="center">
+                </Button>
+                <Button $size="small" $btn_style="secondary" $center="center">
                     ui
-                </Button.Secondary>
+                </Button>
             </UiBox>
+            {/* Secondary button style box end*/}
+            {/* Icon button style box start */}
             <UiBox title="Icon button">
-                <Button.Icon onClick={() => alert('💖'.repeat(20))}>
+                <Button $btn_style="icon" onClick={() => alert('💖'.repeat(20))}>
                     <Icon.Heart />
-                </Button.Icon>
-                <Button.Icon onClick={() => alert('⭐️'.repeat(20))}>
+                </Button>
+                <Button $btn_style="icon" onClick={() => alert('⭐️'.repeat(20))}>
                     <Icon.Star />
-                </Button.Icon>
-                <Button.Icon onClick={() => alert('💀'.repeat(20))}>
+                </Button>
+                <Button $btn_style="icon" onClick={() => alert('💀'.repeat(20))}>
                     <Icon.Bomb />
-                </Button.Icon>
+                </Button>
             </UiBox>
+            {/* Icon button style box end */}
+            {/* Hidden Select style box start */}
             <UiBox title="Hidden Select">
-                {/* <h2>Select</h2> */}
                 <Selecter />
             </UiBox>
+            {/* Hidden Select style box end */}
+            {/* None Hidden Select style box start */}
             <UiBox title="None Hidden Select" translate="none">
                 <Selecter />
             </UiBox>
+            {/* None Hidden Select style box end */}
         </div>
     );
 }

@@ -27,7 +27,7 @@ function Modal(props) {
                               <p>Modal version2</p>
                               <Button.Primary width="100px" $center="center">
                                   {' '}
-                                  check
+                                  check out
                               </Button.Primary>
                               <Button.Secondary
                                   width="100px"
