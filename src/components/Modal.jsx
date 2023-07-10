@@ -8,19 +8,19 @@ import Button from "./Button";
 export const ModalOne = ({ onClick, modalChecked }) => {
   return (
     <StyledModal>
-      <Button.Primary width="250px" onClick={onClick}>
+      <Button $size={"large"} onClick={onClick}>
         <Icon.Heart />
         open modal
         <Icon.Heart />
-      </Button.Primary>
+      </Button>
       {modalChecked
         ? ReactDOM.createPortal(
             <>
               <div className="modal-background" onClick={onClick}></div>
               <div className="modal">
-                <Button.Icon onClick={onClick}>
+                <Button $btn_style={"icon"} onClick={onClick}>
                   <Icon.Xmark />
-                </Button.Icon>
+                </Button>
                 <p>Modal version1</p>
               </div>
             </>,
@@ -34,28 +34,29 @@ export const ModalOne = ({ onClick, modalChecked }) => {
 export const ModalTwo = ({ onClick, modalChecked }) => {
   return (
     <StyledModal>
-      <Button.Secondary onClick={onClick}>
+      <Button $btn_style={"secondary"} onClick={onClick}>
         <Icon.Heart />
         open modalTwo
-      </Button.Secondary>
+      </Button>
       {modalChecked
         ? ReactDOM.createPortal(
             <>
               <div className="modal-background"></div>
               <div className="modal">
                 <p>Modal version2</p>
-                <Button.Primary width="100px" $center="center">
+                <Button $btn-style={"primary"} $width="100px" $center="center">
                   {" "}
                   check
-                </Button.Primary>
-                <Button.Secondary
-                  width="100px"
+                </Button>
+                <Button
+                  $btn-style={"secondary"}
+                  $width="100px"
                   $center="center"
                   onClick={onClick}
                 >
                   {" "}
                   close
-                </Button.Secondary>
+                </Button>
               </div>
             </>,
             document.getElementById("portal")

@@ -21,12 +21,10 @@ const StyledDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* 이거 || 썼는데 둘다 true일때는 어떤게 실행되는거임? 앞에꺼가 실행되는건가? */
   transform: ${(props) => props.translate || `translateY(10px)`};
   box-shadow: 0px 0px 10px #dde0ed;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
-  /* position: relative; */
   &:hover {
     box-shadow: 0px 15px 30px #e8ebf5;
     transform: ${(props) => props.translate || `translateY(0)`};

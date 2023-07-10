@@ -4,37 +4,6 @@ import { blueColor, grayColor } from '../assets/styles/colors';
 import Button from '../components/Button';
 import Icon from '../assets/icons/icons';
 
-const SelectList = styled.ul`
-    width: 250px;
-    /* height: 40px; */
-    border-radius: 25px;
-    overflow: hidden;
-    padding: 10px;
-    background-color: ${blueColor[3]};
-    border: 1px solid ${blueColor[2]};
-    box-shadow: 0px 15px 30px #e8ebf5;
-
-    /* position: absolute;
-    transform: translate(0, 78%); */
-`;
-const SelectItem = styled.li`
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    color: ${grayColor[1]};
-    &:hover {
-        background-color: ${blueColor[2]};
-    }
-`;
-const ItemNonHidden = styled.div`
-    position: absolute;
-    transform: translate(0, 90%);
-`;
 export const Selecter = () => {
     const selectOption = [
         { value: '리액트', text: '리액트' },
@@ -55,10 +24,10 @@ export const Selecter = () => {
 
     return (
         <>
-            <Button.Secondary width="250px" onClick={SelectClick}>
+            <Button $size="large" $btn_style="secondary" onClick={SelectClick}>
                 {selectBtnText}
                 <Icon.CaretDown />
-            </Button.Secondary>
+            </Button>
             {selectBox && (
                 <SelectItemNonHidden>
                     <SelectList>
@@ -83,3 +52,32 @@ export const Selecter = () => {
 const SelectItemNonHidden = ({ children }) => {
     return <ItemNonHidden>{children}</ItemNonHidden>;
 };
+
+const SelectList = styled.ul`
+    width: 250px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: ${blueColor[3]};
+    border: 1px solid ${blueColor[2]};
+    box-shadow: 0px 15px 30px #e8ebf5;
+`;
+const SelectItem = styled.li`
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: ${grayColor[1]};
+    cursor: pointer;
+    &:hover {
+        background-color: ${blueColor[2]};
+    }
+`;
+const ItemNonHidden = styled.div`
+    position: absolute;
+    transform: translate(0, 90%);
+`;

@@ -24,26 +24,26 @@
 
 ### Button
 
--   Primary button과 Secondary button, Icon button까지 3가지 스타일을 제공합니다.
--   아이콘을 선택적으로 삽입할 수 있습니다.
--   width을 선택적으로 지정할 수 있습니다.
+- Primary button과 Secondary button, Icon button까지 3가지 스타일을 제공합니다.
+- 아이콘을 선택적으로 삽입할 수 있습니다.
+- width을 선택적으로 지정할 수 있습니다.
 
 ### Input
 
--   일반형식의 input과 숫자를 넣었을 때 3자리 수마다 `콤마,`가 찍히는 input 2가지를 제공합니다.
--   price input에는 숫자만 입력할 수 있습니다.
--   send 버튼을 클릭하면 입력한 값을 alert에 표시합니다.
--   값이 없을 경우 alert 메세지가 표시됩니다.
+- 일반형식의 input과 숫자를 넣었을 때 3자리 수마다 `콤마,`가 찍히는 input 2가지를 제공합니다.
+- price input에는 숫자만 입력할 수 있습니다.
+- send 버튼을 클릭하면 입력한 값을 alert에 표시합니다.
+- 값이 없을 경우 alert 메세지가 표시됩니다.
 
 ### Modal
 
--   2가지 형식의 Modal을 제공합니다.
-    -   취소, 확인이 있고, overlay를 클릭했을 때 modal이 닫히지 않는 형태
-    -   닫기 버튼만 있고, overlay를 클릭했을 때 닫히는 형태
+- 2가지 형식의 Modal을 제공합니다.
+  - 취소, 확인이 있고, overlay를 클릭했을 때 modal이 닫히지 않는 형태
+  - 닫기 버튼만 있고, overlay를 클릭했을 때 닫히는 형태
 
 ### Select
 
--   부모 요소에 overflow:hidden을 적용해도 Select는 가려지지 않습니다.
+- 부모 요소에 overflow:hidden을 적용해도 Select는 가려지지 않습니다.
 
 <br />
 <br />
@@ -90,6 +90,9 @@ src/
 <br />
 
 ## 프로젝트 라이센스 정보 명시
+
+[font - poppins](https://fonts.google.com/specimen/Poppins) <br />
+[font - 프리텐다드](https://noonnu.cc/font_page/694) <br />
 [font - poppins](https://fonts.google.com/specimen/Poppins) <br />
 [font - 프리텐다드](https://noonnu.cc/font_page/694) <br />
 [fontawesome](https://fontawesome.com/) <br />
